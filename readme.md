@@ -5,40 +5,39 @@
 @tailwind components;
 @tailwind utilities
 
+
 ### Passo 01:
-```sh
 // Crie o arquivo package.json
+```sh
 npm init -y
 ```
 
 ### Passo 02:
-```sh
 // Instalando o TailwindCSS
+```sh
 npm install tailwindcss
 ```
 
 ### Passo 03:
-```sh
 // Autoprefixer is a PostCSS plugin which parses your CSS and adds vendor prefixes
+```sh
 npm install autoprefixer
 ```
 
 ### Passo 04:
-```sh
 // Criando o tailwind.config.js, obs.: npx=package runner, o npm=package instaler
+```sh
 npx tailwindcss init
 ```
 
 ### Passo 05:
-##### Antes de gerar o arquivo no passo 06, crie ele dentro do VSCode 
+##### Antes de geração do arquivo no passo 06, crie o styles.css (Source) dentro do VSCode 
 - Crie uma pasta `src/` e arquivo `styles.css` nesta pasta.
 - Insere este código da lib no `styles.css`:
-`
+
 @tailwind base;\n
 @tailwind components;
 @tailwind utilities;
-`
-
 
 
 ### Passo 06:
@@ -46,7 +45,6 @@ npx tailwindcss init
 // Gerando o arquivo de saída: Este comando eu coloquei direto no `package.json`
 npx tailwindcss build styles.css -o src/css/styles.css
 ```
-
 
 ### Passo Complementar:
 ##### Se você uso o `package.json` basta executar o comando:
