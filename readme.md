@@ -35,7 +35,7 @@ npx tailwindcss init
 - Crie uma pasta `src/` e arquivo `styles.css` nesta pasta.
 - Insere este código da lib no `styles.css`:
 
-@tailwind base;\n
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -56,5 +56,5 @@ npm run dev
 ### Passo Complementar:
 ##### Este é comando para gerar o arquivo de prod - mas não precisa usar por enquanto.
 ```sh
-`NODE_ENV=production npx tailwindcss-cli@latest build ./src/geral.scss -o ./src/styles.css`
+NODE_ENV=production npx tailwindcss-cli@latest build ./src/geral.scss -o ./src/styles.css
 ```
