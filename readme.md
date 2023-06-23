@@ -41,16 +41,16 @@ npx tailwindcss init
 
 
 ### Passo 06:
-```sh
 // Gerando o arquivo de saída: Este comando eu coloquei direto no `package.json`
+```sh
 npx tailwindcss build styles.css -o src/css/styles.css
 ```
 
 ### Passo Complementar:
 ##### Se você uso o `package.json` basta executar o comando:
-```sh
 // Gerando o arquivo de saída: 
-npm run start
+```sh
+npm run dev
 ```
 
 ### Passo Complementar:
