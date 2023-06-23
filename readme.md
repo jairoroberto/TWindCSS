@@ -34,7 +34,10 @@ npx tailwindcss init
 ##### Antes de geração do arquivo no passo 06, crie o styles.css (Source) dentro do VSCode 
 - Crie uma pasta `src/` e arquivo `styles.css` nesta pasta.
 - Insere este código da lib no `styles.css`:
-
+```CSS
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
