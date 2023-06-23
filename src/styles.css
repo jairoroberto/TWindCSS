@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.a-link{
+    @apply text-purple-400 hover:text-purple-800;
+    @apply px-3 py-3 flex;
+    @apply transition delay-100
+}
