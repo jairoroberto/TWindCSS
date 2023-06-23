@@ -35,13 +35,10 @@ npx tailwindcss init
 - Crie uma pasta `src/` e arquivo `styles.css` nesta pasta.
 - Insere este código da lib no `styles.css`:
 ```CSS
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+```
 
 ### Passo 06:
 // Gerando o arquivo de saída: Este comando eu coloquei direto no `package.json`
