@@ -93,5 +93,5 @@ module.exports = {
 }
 ```
 ```sh
-NODE_ENV=production npx tailwindcss-cli@latest build ./src/styles.css -o ./css/styles.min.css --minify
+NODE_ENV=production npx tailwindcss-cli@latest build ./css/styles.css -o ./css/styles.min.css --minify
 ```
