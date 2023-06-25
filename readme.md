@@ -32,7 +32,7 @@ npx tailwindcss init
 
 ### Passo 05:
 ##### Antes de geração do arquivo no passo 06, crie o styles.css (Source) dentro do VSCode 
-- Crie uma pasta `src/` e arquivo `styles.css` nesta pasta.
+- Crie uma pasta `src/` e depois crie um arquivo `styles.css` dentro.
 - Insere este código da lib no `styles.css`:
 ```CSS
 @tailwind base;
