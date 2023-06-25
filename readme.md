@@ -1,5 +1,5 @@
 # TailwinCSS
-[![N|Solid](https://www.devonblog.com/wp-content/uploads/2022/06/tailwind-thumb.jpg)](https://tailwindcss.com/docs/installation | width:300)
+[![N|Solid](https://www.devonblog.com/wp-content/uploads/2022/06/tailwind-thumb.jpg)](https://tailwindcss.com/docs/installation)
 ### Dependencias Iniciais
 @tailwind base
 @tailwind components;
