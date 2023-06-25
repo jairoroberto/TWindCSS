@@ -48,10 +48,7 @@ npx tailwindcss build styles.css -o src/css/styles.css
 
 ### Passo Complementar:
 ##### Se você colocou os prompts de comando na parte de scripts do `package.json` basta executar o comando:
-// Gerando o arquivo de saída: 
-```sh
-npm run dev
-```
+
 //Exemplo do package.json
 ```Javascript
 {
@@ -71,6 +68,10 @@ npm run dev
     "tailwindcss": "^3.3.2"
   }
 }
+```
+// Gerando o arquivo de saída: 
+```sh
+npm run dev
 ```
 
 ### Passo Complementar:
