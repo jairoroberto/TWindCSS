@@ -47,10 +47,30 @@ npx tailwindcss build styles.css -o src/css/styles.css
 ```
 
 ### Passo Complementar:
-##### Se você uso o `package.json` basta executar o comando:
+##### Se você colocou os prompts de comando na parte de scripts do `package.json` basta executar o comando:
 // Gerando o arquivo de saída: 
 ```sh
 npm run dev
+```
+//Exemplo do package.json
+```Javascript
+{
+  "name": "tw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss build ./src/styles.css -o css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "tailwindcss": "^3.3.2"
+  }
+}
 ```
 
 ### Passo Complementar:
