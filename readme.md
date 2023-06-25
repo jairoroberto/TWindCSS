@@ -79,7 +79,7 @@ npm run dev
 // Importante: Antes de executar o comando abaixo, você precisa fazer uma mudança no arquivo de config do Tailwind chamado `tailwind.config.js`
 colocando o `purge: ["index.html"]` para gerar para produção olhando o(s) arquivo que será assistido. Veja o exemplo deste config:
 
-- Exemplo do tailwind.config.js - Algumas mundanças ocorreram, pode haver ajuste neste passo para geração de prod, qualquer dúvida acessar documentação do TailWind ...
+- Obs: Algumas mudanças ocorreram, pode haver ajuste neste passo para geração de prod, qualquer dúvida acessar documentação do TailWind ...
 ```Javascript
 /** @type {import('tailwindcss').Config} */
 module.exports = {
