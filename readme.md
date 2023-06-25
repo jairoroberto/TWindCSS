@@ -77,5 +77,5 @@ npm run dev
 ### Passo Complementar:
 ##### Este é comando para gerar o arquivo de prod - mas não precisa usar por enquanto.
 ```sh
-NODE_ENV=production npx tailwindcss-cli@latest build ./src/geral.scss -o ./src/styles.css
+NODE_ENV=production npx tailwindcss-cli@latest build ./src/styles.css -o ./css/styles.min.css --minify
 ```
