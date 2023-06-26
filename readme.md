@@ -75,7 +75,24 @@ npm run dev
 ```
 
 ### Passo Complementar:
-##### Este é comando para gerar o arquivo de prod - mas não precisa usar por enquanto.
+##### Este é comando para gerar o arquivo de prod minificando ainda mais o arquivo de css
+// Importante: Antes de executar o comando abaixo, você precisa fazer uma mudança no arquivo de config do Tailwind chamado `tailwind.config.js`
+colocando o `purge: ["index.html"]` para gerar para produção olhando o(s) arquivo que será assistido. Veja o exemplo deste config:
+
+- Obs: Algumas mudanças ocorreram, pode haver ajuste neste passo para geração de prod, qualquer dúvida acessar documentação do TailWind ...
+```Javascript
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  purge: ["index.html"],
+  content: [
+    '*.html',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
 ```sh
-NODE_ENV=production npx tailwindcss-cli@latest build ./src/geral.scss -o ./src/styles.css
+NODE_ENV=production npx tailwindcss-cli@latest build ./src/styles.css -o ./css/styles.min.css --minify
 ```
