@@ -4,32 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.min.css">
-    <title>TailWind Básico</title>
+    <title>TailWindCSS</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <nav class="relative flex items-center justify-between gap-3 px-2 border-b border-zinc-200 bg-zinc-50">
-        <div class="text-white text-center p-2 rounded-[6px] bg-purple-600 w-[110px]">
-            Logomarca
+<body class="bg-zinc-50 sm:bg-white">
+    <nav class="border-b border-zinc-200 mb-12">
+        <div class="relative container flex items-center justify-between mx-auto">
+            <div class="flex h-[40px] w-[120px] px-2 cursor-pointer">
+                <!-- <img class="h-auto max-w-full" src="https://img.icons8.com/?id=17949&format=png" alt="logo"> -->
+                <svg class="h-auto max-w-full" xmlns:xlink="http://www.w3.org/1999/xlink" height="48"
+                    viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m15.5752 19.0792a4.2055 4.2055 0 0 0 -2.01 3.5376 4.0931 4.0931 0 0 0 2.4908 3.7542 9.7779 9.7779 0 0 1 -1.2755 2.6351c-.7941 1.1431-1.6244 2.2862-2.8878 2.2862s-1.5883-.734-3.0443-.734c-1.42 0-1.9252.7581-3.08.7581s-1.9611-1.0589-2.8876-2.3584a11.3987 11.3987 0 0 1 -1.9373-6.1487c0-3.61 2.3464-5.523 4.6566-5.523 1.2274 0 2.25.8062 3.02.8062.734 0 1.8771-.8543 3.2729-.8543a4.3778 4.3778 0 0 1 3.6822 1.841zm-6.8586-2.0456a1.3865 1.3865 0 0 1 -.2527-.024 1.6557 1.6557 0 0 1 -.0361-.337 4.0341 4.0341 0 0 1 1.0228-2.5148 4.1571 4.1571 0 0 1 2.7314-1.4078 1.7815 1.7815 0 0 1 .0361.373 4.1487 4.1487 0 0 1 -.9867 2.587 3.6039 3.6039 0 0 1 -2.5148 1.3236z"
+                        fill-opacity="0.8" fill="#000000"></path>
+                </svg>
+            </div>
+            <a href="#" id="menu-toggle" class="sm:hidden p-2 flex  w-[44px] h-[44px] justify-center items-center">
+                <span></span>
+            </a>
+            <ul
+                class="py-4 sm:py-0 transition-all shadow-sm sm:shadow-none hidden sm:flex sm:gap-5 gap-0 flex-col sm:flex-row absolute sm:relative top-[46px] sm:top-0 w-full sm:w-auto bg-white">
+                <li><a class="a-link" href="#">Loja</a></li>
+                <li><a class="a-link" href="#">Mac</a></li>
+                <li><a class="a-link" href="#">iPad</a></li>
+                <li><a class="a-link" href="#">iPhone</a></li>
+                <li><a class="a-link" href="#">Watch</a></li>
+                <li><a class="a-link" href="#">Airpods</a></li>
+                <li><a class="a-link" href="#">TV e Casa</a></li>
+                <li><a class="a-link" href="#">Entreterimento</a></li>
+                <li><a class="a-link" href="#">Acessórios</a></li>
+            </ul>
         </div>
-
-        <a href="#" class="sm:hidden w-[100px]">Menu</a>
-
-        <ul class="flex gap-5 flex-col sm:flex-row">
-            <li><a class="a-link" href="#">Item 01</a></li>
-            <li><a class="a-link" href="#">Item 02</a></li>
-            <li><a class="a-link" href="#">Item 03</a></li>
-            <li><a class="a-link" href="#">Item 04</a></li>
-            <li><a class="a-link" href="#">Item 05</a></li>
-        </ul>
     </nav>
-    <div class="container bg-blue-500 mx-auto mt-4 p-4 rounded-md shadow-md">
-        <h1 class="text-white text-md text-center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore?
-        </h1>
+
+
+    <div class="sm:container mx-auto bg-grad text-white mt-2 p-8 rounded-md w-[calc(100%_-_30px)]">
+
+        <h1 class="text-2xl mb-4 border-b pb-4 border-b-blue-300">TailwindCSS</h1>
+        <div></div>
+        <button class="bg-blue-700 hover:bg-blue-900 text-white font-light py-3 mt-4 px-6 rounded">My
+            Tailwind
+            Button
+        </button>
+
     </div>
 
+
+    <script>
+        const callMenu = document.getElementById('menu-toggle');
+        const menu = document.querySelector('ul');
+
+        callMenu.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('h-auto');
+            callMenu.classList.toggle('rot')
+        });
+    </script>
 
 </body>
 

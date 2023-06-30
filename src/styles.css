@@ -3,7 +3,75 @@
 @tailwind utilities;
 
 .a-link {
-  @apply text-purple-400 hover:text-purple-800;
-  @apply px-3 py-2 flex;
+  @apply sm:text-zinc-600 text-zinc-800 text-[18px] sm:text-[12px];
+  @apply px-10 sm:px-3 flex items-center;
   @apply transition delay-100;
+  @apply sm:hover:shadow-[inset_0_-2px_0px_rgba(0,0,0,0.6)];
+  @apply hover:text-zinc-800;
+  @apply relative top-[1px];
+  @apply h-[58px] sm:h-[42px];
+  @apply hover:bg-zinc-100 sm:hover:bg-transparent;
+  @apply border-b-0 sm:border-b-gray-300 sm:border-solid;
+  @apply sm:font-normal font-semibold;
+}
+
+.bg-grad {
+  background-image: linear-gradient(86deg, #2977f3, #4f2cd2);
+}
+
+#menu-toggle {
+  --w-menu: 22px;
+  --h-menu: 2px;
+}
+#menu-toggle:hover {
+  background-color: #f2f2f2;
+}
+
+#menu-toggle span {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+
+#menu-toggle span,
+#menu-toggle span:before,
+#menu-toggle span:after {
+  height: var(--h-menu);
+  width: var(--w-menu);
+  background: #121212;
+  transition: all 0.3s ease;
+}
+
+#menu-toggle span:before,
+#menu-toggle span:after {
+  content: "";
+  position: absolute;
+}
+
+#menu-toggle span:before {
+  top: -6px;
+  width: 16px;
+}
+
+#menu-toggle span:after {
+  top: 6px;
+  width: 16px;
+}
+
+#menu-toggle.rot span {
+  background: transparent;
+}
+
+#menu-toggle.rot span:before {
+  transform: rotate(45deg);
+  width: var(--w-menu);
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+#menu-toggle.rot span:after {
+  transform: rotate(-45deg);
+  width: var(--w-menu);
+  top: 0;
+  transition: all 0.3s ease;
 }
